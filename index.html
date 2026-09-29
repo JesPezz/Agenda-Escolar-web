@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Agenda Escolar</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 2.5rem auto;
+         padding: 0 1.2rem; line-height: 1.6; color: #1f2933; }
+  h1 { margin-bottom: 0; } h2 { margin-top: 2.2rem; }
+  .sub { color: #52606d; margin-top: .2rem; }
+  footer { margin-top: 3rem; border-top: 1px solid #e4e7eb; padding-top: 1rem;
+           font-size: .9rem; color: #52606d; }
+  a { color: #0b6bcb; }
+</style>
+</head>
+<body>
+<h1>Agenda Escolar</h1>
+<p class="sub">Agenda y control de asistencia para primaria (3.º grado, grupo A).</p>
+
+<h2>Qué hace esta aplicación</h2>
+<p>
+  Agenda Escolar es una herramienta de uso docente para llevar el control de un grupo de
+  primaria. Lleva el padrón de alumnos (nombre, CURP, fecha de nacimiento, dirección y
+  teléfono del tutor), la asistencia diaria, las calificaciones por periodo, las tareas
+  y lecturas asignadas, el horario, el expediente de cada alumno y el calendario escolar
+  oficial. Se distribuye en dos versiones: una aplicación de escritorio para Windows y
+  una aplicación para Android.
+</p>
+<p>
+  Todos los datos se guardan <strong>únicamente en el equipo donde se usa la aplicación</strong>
+  y, si la persona docente lo activa, se copian a un solo archivo
+  (<code>agenda_datos.json</code>) dentro de la cuenta de Google Drive de esa misma persona
+  docente, para poder abrir los mismos datos desde el móvil. La sincronización solo puede
+  crear, leer y modificar ese archivo: la aplicación nunca toca otro contenido de la cuenta.
+</p>
+
+<h2>Datos y permisos</h2>
+<p>
+  La aplicación solicita un único permiso de Google: <code>drive.file</code>, que la limita
+  exclusivamente a los archivos que ella misma crea. No accede a otros archivos del Drive,
+  ni al correo, ni a contactos, ni a la ubicación.
+</p>
+
+<h2>Documentos legales</h2>
+<ul>
+  <li><a href="privacidad.html">Política de privacidad</a></li>
+  <li><a href="terminos.html">Condiciones del servicio</a></li>
+</ul>
+
+<footer>
+  Agenda Escolar no está afiliada, asociada, autorizada ni respaldada por Google.
+  Herramienta de uso interno del docente; no es un producto de Google.
+</footer>
+</body>
+</html>

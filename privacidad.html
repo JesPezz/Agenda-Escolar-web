@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Agenda Escolar</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 2.5rem auto;
+         padding: 0 1.2rem; line-height: 1.6; color: #1f2933; }
+  h1 { margin-bottom: 0; } h2 { margin-top: 2rem; }
+  .sub { color: #52606d; margin-top: .2rem; }
+  footer { margin-top: 3rem; border-top: 1px solid #e4e7eb; padding-top: 1rem;
+           font-size: .9rem; color: #52606d; }
+  a { color: #0b6bcb; }
+</style>
+</head>
+<body>
+<h1>Política de privacidad</h1>
+<p class="sub">Agenda Escolar · vigente desde el 28 de septiembre de 2026</p>
+
+<h2>1. Responsable</h2>
+<p>
+  La aplicación es una herramienta pedagógica de uso personal, desarrollada por quien la
+  instala (la persona docente). El responsable del tratamiento de los datos es ese usuario,
+  que decide qué datos introduce y con quién los comparte.
+</p>
+
+<h2>2. Qué datos guarda la aplicación</h2>
+<p>La base de datos local puede incluir, según lo que el docente capture:</p>
+<ul>
+  <li>Datos de identificación del alumno: nombre completo, CURP, fecha de nacimiento, sexo y edad.</li>
+  <li>Información familiar: nombre del tutor o madre, dirección y teléfono.</li>
+  <li>Escolar: matrícula, grupo, asistencia diaria, calificaciones por periodo, tareas,
+      lecturas, expediente académico y calendario escolar.</li>
+</ul>
+<p>
+  Estos datos son <strong>datos personales de menores</strong>. La aplicación es una
+  herramienta de control interno: el docente es el responsable de cumplir la normativa de
+  protección de datos personales que le aplique (en México, la LFPDPPP) y de obtener las
+  autorizaciones que exija.
+</p>
+
+<h2>3. Dónde se guardan los datos</h2>
+<ul>
+  <li><strong>En el equipo</strong>: en una base de datos SQLite dentro de la carpeta de datos
+      de la aplicación, y en el móvil en el almacenamiento privado de la app.</li>
+  <li><strong>En Google Drive</strong>: solo si la persona docente activa la sincronización.
+      Entonces los datos se guardan en un único archivo (<code>agenda_datos.json</code>) de su
+      propia cuenta de Google Drive. Ese archivo es privado y solo se sincroniza con la cuenta
+      de Google con la que se conectó la aplicación.</li>
+</ul>
+<p>
+  <strong>No hay servidores intermedios</strong>: ni del desarrollador ni de terceros. Los datos
+  nunca salen del equipo del docente ni de su propia cuenta de Drive.
+</p>
+
+<h2>4. Permiso de Google solicitado</h2>
+<p>
+  La aplicación usa la API de Google Drive con el permiso <code>drive.file</code>, que la limita
+  a los archivos que ella misma crea. No pide acceso a otros archivos de la cuenta, ni a Gmail,
+  ni a Contactos, ni a la ubicación, ni a ningún otro servicio de Google. La información de la
+  cuenta de Google se usa <strong>únicamente</strong> para leer y escribir ese archivo de
+  sincronización.
+</p>
+
+<h2>5. Sin cesión a terceros</h2>
+<p>
+  La aplicación <strong>no</strong> vende, alquila, comparte ni cede los datos con terceros, no
+  incorpora publicidad ni herramientas de analítica, y no realiza perfiles de usuarios.
+</p>
+
+<h2>6. Cómo se protegen los datos</h2>
+<p>
+  El acceso a la cuenta de Google exige que el docente autorice la conexión de forma explícita;
+  el permiso se puede revocar en cualquier momento desde
+  <em>Cuenta de Google → Seguridad → Conexiones con cuentas de terceros</em>. Al desconectar la
+  sincronización, la aplicación deja de leer y escribir en Drive. El usuario puede borrar los
+  datos locales eliminando la carpeta de datos de la aplicación, y puede borrar el archivo de
+  Drive desde su propia cuenta.
+</p>
+
+<h2>7. Cambios en esta política</h2>
+<p>
+  Cualquier cambio relevante se publicará en esta misma página, indicando su fecha de
+  vigencia.
+</p>
+
+<footer>
+  <a href="index.html">Volver a la página principal</a> ·
+  Agenda Escolar no está afiliada a Google.
+</footer>
+</body>
+</html>
