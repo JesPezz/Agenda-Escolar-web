@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Asistencia Escolar</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 2.5rem auto;
+         padding: 0 1.2rem; line-height: 1.6; color: #1f2933; }
+  h1 { margin-bottom: 0; } h2 { margin-top: 2rem; }
+  .sub { color: #52606d; margin-top: .2rem; }
+  footer { margin-top: 3rem; border-top: 1px solid #e4e7eb; padding-top: 1rem;
+           font-size: .9rem; color: #52606d; }
+  a { color: #0b6bcb; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; border-bottom: 1px solid #e4e7eb; padding: .4rem .5rem;
+           vertical-align: top; }
+</style>
+</head>
+<body>
+<h1>Política de privacidad</h1>
+<p class="sub">Asistencia Escolar · vigente desde el 22 de noviembre de 2026</p>
+
+<h2>1. Responsable</h2>
+<p>
+  <em>Asistencia Escolar</em> es una aplicación para Android de uso profesional, pensada para
+  que el personal de prefectura, trabajo social o dirección registre la asistencia de los
+  alumnos de secundaria. El responsable del tratamiento de los datos es
+  <strong>quien la usa</strong> (la persona docente, prefecto o la institución educativa),
+  que decide qué datos introduce y con quién los comparte.
+</p>
+<p>
+  <strong>JesPezz</strong>, desarrollador de la aplicación, <strong>no recibe, almacena ni
+  administra</strong> esos datos: la app funciona sin servidores del desarrollador.
+</p>
+<p>Contacto para cualquier asunto de privacidad: <strong>agendaescolarappzz@gmail.com</strong>.</p>
+
+<h2>2. Qué datos guarda la aplicación</h2>
+<p>La base local puede incluir, según lo que el usuario capture o importe:</p>
+<ul>
+  <li><strong>Del alumno:</strong> nombre completo, CURP, fecha de nacimiento, edad, sexo,
+      grado y grupo, número de lista y matrícula.</li>
+  <li><strong>Escolares:</strong> asistencia por día y por hora, retardos, faltas y
+      justificantes, calendario escolar, observaciones y reportes del día.</li>
+  <li><strong>De tutores:</strong> nombre, parentesco y teléfono de contacto.</li>
+  <li><strong>De la escuela y del usuario:</strong> nombre, C.C.T., turno y datos de contacto.</li>
+</ul>
+<p>
+  Son datos personales de <strong>menores de edad</strong>, por lo que su tratamiento exige
+  especial cuidado. La aplicación es una herramienta de control interno: el usuario es el
+  responsable de cumplir la normativa de protección de datos personales que le aplique (en
+  México, la LFPDPPP) y de obtener las autorizaciones que exija.
+</p>
+
+<h2>3. Dónde se guardan los datos</h2>
+<table>
+  <tr><th>Dónde</th><th>Qué</th><th>Protección</th></tr>
+  <tr>
+    <td>El teléfono</td>
+    <td>Base de datos de la app (almacenamiento privado de Android)</td>
+    <td>Cifrada en el dispositivo; excluida de las copias de seguridad del sistema</td>
+  </tr>
+  <tr>
+    <td>Puntos de restauración</td>
+    <td>Copias de la base</td>
+    <td>Cifrados con una clave del almacén seguro de Android (Keystore)</td>
+  </tr>
+  <tr>
+    <td>Google Drive del usuario (opcional)</td>
+    <td>Un solo archivo de sincronización (<code>prefectura_datos.json</code>)</td>
+    <td>Cifrado con la contraseña que el usuario elija</td>
+  </tr>
+  <tr>
+    <td>Comunicaciones</td>
+    <td>Sincronización con Drive</td>
+    <td>TLS</td>
+  </tr>
+</table>
+<p>
+  <strong>No hay servidores intermedios</strong>: ni del desarrollador ni de terceros. Los datos
+  nunca salen del teléfono del usuario ni de su propia cuenta de Drive.
+</p>
+
+<h2>4. Permiso de Google solicitado</h2>
+<p>
+  Si el usuario activa la sincronización, la aplicación usa la API de Google Drive con el
+  permiso <code>drive.file</code>, que la limita a los archivos que ella misma crea. No pide
+  acceso a otros archivos de la cuenta, ni a Gmail, ni a Contactos, ni a la ubicación, ni a
+  ningún otro servicio de Google. La conexión se usa <strong>únicamente</strong> para leer y
+  escribir ese archivo de sincronización, y se puede revocar en cualquier momento desde
+  <em>Cuenta de Google → Seguridad → Conexiones con cuentas de terceros</em>.
+</p>
+
+<h2>5. Para qué se usan</h2>
+<p>
+  Únicamente para el funcionamiento de la app: pasar lista, registrar retardos y faltas,
+  justificar ausencias, consultar el calendario escolar y generar reportes o la agenda en Word
+  o PDF. No se usan para publicidad, mercadotecnia, perfilado ni decisiones automatizadas.
+</p>
+
+<h2>6. Sin cesión a terceros</h2>
+<p>
+  La aplicación <strong>no</strong> vende, alquila, comparte ni cede los datos con terceros, no
+  incorpora publicidad ni herramientas de analítica, y no realiza perfiles de usuarios. La
+  versión publicada en Google Play no consulta servidores del desarrollador. Solo la copia que
+  se distribuye fuera de la tienda comprueba si existe una versión nueva, y esa consulta no
+  lleva datos del alumnado.
+</p>
+
+<h2>7. Cómo se protegen los datos</h2>
+<ul>
+  <li><strong>Cifrado:</strong> la base, los puntos de restauración y la copia de Drive van
+      cifrados.</li>
+  <li><strong>Candado:</strong> la app puede pedir huella o PIN al abrirse.</li>
+  <li><strong>Dispositivos vinculados:</strong> la app permite ver qué teléfonos están usando
+      la misma copia y ordenar el borrado a distancia de uno de ellos.</li>
+  <li><strong>Contraseña de la copia:</strong> si el usuario la olvida, la copia cifrada de
+      Drive no se puede recuperar, ni por el desarrollador.</li>
+</ul>
+
+<h2>8. Cómo eliminar los datos</h2>
+<ol>
+  <li><strong>Desde la app:</strong> <em>Alumnos</em> → icono de la <strong>papelera</strong>
+      (Borrar base de datos). Se eliminan alumnos, asistencias y reportes de ese teléfono.</li>
+  <li><strong>La copia de Drive:</strong> desde <a href="https://drive.google.com">drive.google.com</a>
+      con la cuenta usada, busca <code>prefectura_datos.json</code>, muévelo a la papelera y
+      vacíala. Google conserva además un historial de versiones unos 30 días.</li>
+  <li><strong>El acceso de Google:</strong> en
+      <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+      retira el acceso de <em>Asistencia Escolar</em>.</li>
+  <li><strong>Todo:</strong> desinstalar la aplicación (o <em>Ajustes → Aplicaciones →
+      Asistencia Escolar → Borrar datos</em>) elimina la base y los puntos de restauración.</li>
+</ol>
+
+<h2>9. Cambios en esta política</h2>
+<p>
+  Cualquier cambio relevante se publicará en esta misma página, indicando su fecha de
+  vigencia.
+</p>
+
+<footer>
+  <a href="index.html">Volver a la página principal</a> ·
+  <a href="../privacidad.html">Agenda Escolar</a> ·
+  Asistencia Escolar no está afiliada a Google ni es un producto oficial de la SEP.
+</footer>
+</body>
+</html>
