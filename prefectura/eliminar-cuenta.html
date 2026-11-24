@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Eliminar la cuenta y los datos — Asistencia Escolar</title>
+<style>
+  body { font-family: system-ui, sans-serif; max-width: 46rem; margin: 2.5rem auto;
+         padding: 0 1.2rem; line-height: 1.6; color: #1f2933; }
+  h1 { margin-bottom: 0; } h2 { margin-top: 2rem; }
+  .sub { color: #52606d; margin-top: .2rem; }
+  footer { margin-top: 3rem; border-top: 1px solid #e4e7eb; padding-top: 1rem;
+           font-size: .9rem; color: #52606d; }
+  a { color: #0b6bcb; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { text-align: left; border-bottom: 1px solid #e4e7eb; padding: .4rem .5rem;
+           vertical-align: top; }
+  .nota { background: #f5f7fa; border-left: 4px solid #0b6bcb; padding: .8rem 1rem; }
+</style>
+</head>
+<body>
+<h1>Eliminar la cuenta y los datos</h1>
+<p class="sub">Asistencia Escolar (<code>com.jespezz.prefectura</code>) · desarrollador JesPezz ·
+  vigente desde el 24 de noviembre de 2026</p>
+
+<h2>Qué es «la cuenta» en esta app</h2>
+<p>
+  <em>Asistencia Escolar</em> <strong>no crea cuentas propias</strong>: no hay registro, ni
+  nombre de usuario, ni contraseña en ningún servidor del desarrollador. La única cuenta que
+  interviene es la <strong>cuenta de Google</strong> que el usuario conecta, de forma
+  opcional, para guardar una copia de seguridad en su propio Drive.
+</p>
+<p>
+  Por tanto, eliminar la cuenta significa <strong>desvincular esa cuenta de Google y borrar
+  la copia que hay en el Drive del usuario</strong>, además de borrar la base de datos del
+  teléfono. Todas las acciones se hacen desde la propia app, sin esperar a nadie.
+</p>
+<p class="nota">
+  ¿Prefieres que lo hagamos nosotros? Escribe a
+  <strong>agendaescolarappzz@gmail.com</strong> desde el correo que quieres dar de baja,
+  indicando «Eliminar mis datos – Asistencia Escolar». Respondemos en un máximo de
+  <strong>30 días naturales</strong>. No podemos acceder al contenido de la copia de Drive,
+  que está cifrada con una contraseña que solo conoce el usuario, así que el correo sirve
+  para confirmar la baja y retirar la vinculación, no para recuperar datos.
+</p>
+
+<h2>Paso 1 · Desvincular la cuenta de Google (borra la copia de Drive)</h2>
+<ol>
+  <li>Abre <em>Asistencia Escolar</em>.</li>
+  <li>Entra en <strong>Google Drive</strong> (icono de la nube en la pantalla de inicio).</li>
+  <li>Pulsa <strong>«Desvincular la cuenta»</strong> y confirma con <strong>«Desvincular»</strong>.</li>
+</ol>
+<p>
+  Esta acción <strong>borra el archivo <code>prefectura_datos.json</code> del Drive del
+  usuario</strong> y deja el teléfono sin conexión. Si la app pide la contraseña de la nube
+  antes de desvincular, es la que se creó al conectar Drive por primera vez.
+</p>
+<p>
+  Si ya no tienes la app instalada, borra el archivo a mano:
+  <a href="https://drive.google.com">drive.google.com</a> → busca
+  <code>prefectura_datos.json</code> → clic derecho → <em>Mover a la papelera</em> → vaciar
+  la papelera.
+</p>
+
+<h2>Paso 2 · Borrar los datos del teléfono</h2>
+<ol>
+  <li>En la app: <em>Alumnos</em> → icono de la <strong>papelera («Borrar base de datos»)</strong>.
+      Se eliminan alumnos, asistencias, retardos, faltas, justificantes, calendario, tutores y
+      reportes de ese teléfono.</li>
+  <li>Opcional: <em>Google Drive</em> → <strong>«Borrar el historial de Drive»</strong>, para
+      que Google no conserve las versiones anteriores del archivo.</li>
+  <li>Para terminar: desinstala la aplicación, o <em>Ajustes → Aplicaciones → Asistencia
+      Escolar → Almacenamiento → Borrar datos</em>.</li>
+</ol>
+
+<h2>Paso 3 · Retirar el acceso de Google (recomendado)</h2>
+<p>
+  Entra en <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>
+  y retira el acceso de <em>Asistencia Escolar</em>. Así la app no puede volver a leer ni a
+  escribir en Drive, aunque se reinstale.
+</p>
+
+<h2>Qué datos se borran y cuáles se conservan</h2>
+<table>
+  <tr><th>Tipo de dato</th><th>Al eliminar</th><th>Plazo</th></tr>
+  <tr>
+    <td>Base de datos del teléfono (alumnos, asistencia, retardos, faltas, justificantes,
+        calendario, tutores, escuela, reportes)</td>
+    <td><strong>Se borra</strong> al usar «Borrar base de datos» o al desinstalar</td>
+    <td>Inmediato</td>
+  </tr>
+  <tr>
+    <td>Puntos de restauración locales y la clave de cifrado del dispositivo</td>
+    <td><strong>Se borran</strong> con los datos de la app</td>
+    <td>Inmediato</td>
+  </tr>
+  <tr>
+    <td>Copia de seguridad en el Drive del usuario (<code>prefectura_datos.json</code>, cifrada)</td>
+    <td><strong>Se borra</strong> al desvincular la cuenta o al vaciar la papelera de Drive</td>
+    <td>Inmediato; Google puede conservar versiones anteriores hasta 30 días</td>
+  </tr>
+  <tr>
+    <td>Correo de la cuenta vinculada y configuración de sincronización</td>
+    <td><strong>Se borra</strong> del teléfono al desvincular o al borrar los datos de la app</td>
+    <td>Inmediato</td>
+  </tr>
+  <tr>
+    <td>Permiso de acceso a Google Drive</td>
+    <td>Se retira desde la cuenta de Google (paso 3) o al desvincular</td>
+    <td>Inmediato</td>
+  </tr>
+  <tr>
+    <td>Correos enviados a agendaescolarappzz@gmail.com</td>
+    <td>Se conserva mientras dure la conversación y <strong>se borra</strong> al cerrarla</td>
+    <td>Máximo 30 días naturales</td>
+  </tr>
+  <tr>
+    <td>Datos en servidores del desarrollador</td>
+    <td><strong>No existen</strong>: la app no tiene backend ni analítica</td>
+    <td>—</td>
+  </tr>
+</table>
+
+<h2>Datos que no se pueden borrar desde aquí</h2>
+<p>
+  El historial de versiones que Google Drive guarda de los archivos borrados es
+  responsabilidad de Google; se elimina vaciando la papelera o esperando el plazo de
+  conservación de Google (unos 30 días). El desarrollador no tiene acceso a él.
+</p>
+<p>
+  Si la aplicación se usó con datos de alumnos, recuerda que el responsable del tratamiento
+  es el centro educativo o la persona docente que los capturó: el borrado de la app no
+  sustituye a los registros escolares que la normativa obligue a conservar.
+</p>
+
+<footer>
+  <a href="index.html">Volver a la página principal</a> ·
+  <a href="privacidad.html">Política de privacidad</a> ·
+  <a href="../privacidad.html">Agenda Escolar</a> ·
+  Asistencia Escolar no está afiliada a Google ni es un producto oficial de la SEP.
+</footer>
+</body>
+</html>
